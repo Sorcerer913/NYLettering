@@ -1,13 +1,15 @@
 package max.go.lettering;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -16,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
     private Button button_signOut;
+    private Button button_edit_name;
 
     private Button button_send;
     private Button button_letters_for_you;
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         button_signOut = (Button) findViewById(R.id.button_signout);
+        button_edit_name = (Button) findViewById(R.id.button_edit_name);
 
         button_music = (Button) findViewById(R.id.button_music);
         button_send = (Button) findViewById(R.id.button_send);
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         pass = (EditText) findViewById(R.id.edit_text_pass);
 
         button_signOut.setOnClickListener(outClickListener);
+        button_edit_name.setOnClickListener(editnameClickListener);
         button_music.setOnClickListener(button_musicClickListener);
         button_send.setOnClickListener(button_sendClickListener);
         button_letters_for_you.setOnClickListener(button_lettersClickListener);
@@ -55,6 +60,24 @@ public class MainActivity extends AppCompatActivity {
         //if(letCheck.isLetterGot())button_letters_for_you.setVisibility(View.VISIBLE);
 
     }
+
+    View.OnClickListener editnameClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+//            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//            builder.setTitle()
+//                    .setMessage("Покормите кота!")
+//                    .setCancelable(true)
+//                    .setNegativeButton("ОК, иду на кухню",
+//                            new DialogInterface.OnClickListener() {
+//                                public void onClick(DialogInterface dialog, int id) {
+//                                    dialog.cancel();
+//                                }
+//                            });
+//            AlertDialog alert = builder.create();
+//            alert.show();
+        }
+    };
 
     View.OnClickListener outClickListener = new View.OnClickListener() {
         @Override

@@ -28,7 +28,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="@string/generic_title_text"
             android:gravity="center"
             android:theme="@style/ThemeOverlay.MyTitleText" />
 
@@ -53,8 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:text="@string/generic_label_provider"/>
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/providerSpinner"

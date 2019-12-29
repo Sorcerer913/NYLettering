@@ -21,7 +21,7 @@ class AudioPlayer { //TODO: new functions
 
     }
 
-    public AudioPlayer(LinkedList playList) {
+    public AudioPlayer(LinkedList<Integer> playList) {
         mix = false;
         repeat = false;
         id_music_list = playList;
@@ -91,7 +91,6 @@ class AudioPlayer { //TODO: new functions
 
     public void pause() {
         mPlayer.pause();
-
     }
 
     public void stop() {

@@ -93,6 +93,18 @@ public class MusicActivity extends AppCompatActivity {  //TODO: nice layout with
     }
 
     @Override
+    public void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    public void onStop(){
+        mPlayer.stop();
+        button_play_pause.setImageResource(R.drawable.play);
+        super.onStop();
+    }
+
+    @Override
     public void onDestroy() {
         mPlayer.stop();
         super.onDestroy();

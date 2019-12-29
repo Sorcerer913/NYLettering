@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class EmailPasswordActivity extends BaseActivity implements
+public class EmailPasswordActivity extends BaseActivity implements  //TODO: add unique name and group(optional)
         View.OnClickListener {
 
     private static final String TAG = "EmailPassword";

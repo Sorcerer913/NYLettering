@@ -11,14 +11,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start" />
     <!--android:src="@drawable/logo"-->
-    <ImageButton
+    <Button
         android:id="@+id/button_signout"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="end"
-        tools:src="@drawable/out"
-        android:scaleType="centerCrop" />
-    <!--android:src="@drawable/logout"-->
+        android:text="@string/com_facebook_loginview_log_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end" />
+
 
     <ImageView
         android:id="@+id/image_view"

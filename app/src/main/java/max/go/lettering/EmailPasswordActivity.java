@@ -1,7 +1,6 @@
 package max.go.lettering;
 
 import android.content.Intent;
-import android.drm.DrmStore;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;

@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton button_signOut;
+    private Button button_signOut;
 
     private Button button_send;
     private Button button_letters_for_you;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        button_signOut = (ImageButton) findViewById(R.id.button_signout);
+        button_signOut = (Button) findViewById(R.id.button_signout);
 
         button_music = (Button) findViewById(R.id.button_music);
         button_send = (Button) findViewById(R.id.button_send);

@@ -47,6 +47,7 @@
     <string name="music">Музыка</string>
     <string name="anonim">Анонимно</string>
     <string name="add_group">Создать группу</string>
+    <string name="title">Название</string>
     <string name="number">Номер</string>
     <string name="server_port">Номер группы</string>
     <string name="server_password">Пароль</string>

@@ -17,8 +17,15 @@
     <EditText
         android:id="@+id/input_add_group"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:hint="@string/title">
         <requestFocus />
     </EditText>
+    <EditText
+        android:id="@+id/input_add_group_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/number"/>
 
 </LinearLayout>

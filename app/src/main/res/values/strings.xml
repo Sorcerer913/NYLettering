@@ -57,6 +57,7 @@
     <string name="music">Music</string>
     <string name="anonim">anonim</string>
     <string name="add_group">Add Group</string>
+    <string name="title">Title</string>
     <string name="number">Number</string>
     <string name="server_port">Group Num</string>
     <string name="server_password">Password</string>

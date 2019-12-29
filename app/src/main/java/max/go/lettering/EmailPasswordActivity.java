@@ -68,10 +68,6 @@ public class EmailPasswordActivity extends BaseActivity implements
     // [END on_start_check_user]
     @Override
     public void onResume(){
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
-
         super.onResume();
     }
 

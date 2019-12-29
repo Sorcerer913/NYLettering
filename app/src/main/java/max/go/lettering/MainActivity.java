@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TextView userName;
     private Button button_signOut;
     private Button button_edit_name;
 
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
+        userName = (TextView) findViewById(R.id.userName);
         button_signOut = (Button) findViewById(R.id.button_signout);
         button_edit_name = (Button) findViewById(R.id.button_edit_name);
 
@@ -56,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         button_addGroup = (Button) findViewById(R.id.button_add_group);
         port = (EditText) findViewById(R.id.edit_text_port);
         pass = (EditText) findViewById(R.id.edit_text_pass);
+
+        //userName.setText(mAuth.getCurrentUser().getDisplayName());        //TODO: Username
 
         button_signOut.setOnClickListener(outClickListener);
         button_edit_name.setOnClickListener(editnameClickListener);
@@ -97,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                                     String name = userInput.getText().toString().replaceAll(" ","");
 
                                     //TODO: Отправка имени в базу данных.
+                                    //mAuth.getCurrentUser().
 
                                     Toast.makeText(MainActivity.this, "Name has changed to \""+name+"\"", Toast.LENGTH_SHORT).show();
 

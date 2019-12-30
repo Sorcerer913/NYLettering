@@ -144,7 +144,7 @@
                 android:layout_gravity="right"
                 android:ems="10"
                 android:hint="@string/server_password"
-                android:inputType="number"
+                android:inputType="textVisiblePassword"
                 android:maxLength="8" />
 
         </LinearLayout>

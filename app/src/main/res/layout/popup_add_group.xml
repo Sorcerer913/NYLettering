@@ -34,7 +34,7 @@
         android:id="@+id/input_add_group_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="textVisiblePassword"
         android:hint="@string/server_password"
         android:maxLength="8"/>
 

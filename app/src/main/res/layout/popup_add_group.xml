@@ -21,11 +21,21 @@
         android:hint="@string/title">
         <requestFocus />
     </EditText>
+
     <EditText
         android:id="@+id/input_add_group_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="@string/number"/>
+        android:hint="@string/server_port"
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/input_add_group_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/server_password"
+        android:maxLength="8"/>
 
 </LinearLayout>
